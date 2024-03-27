@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- where we tell the browser how to process the document: -->
-        <!-- what title to put in the browser tab -->
-        <!-- what style sheets to load -->
-        <!-- what language to use -->
-          <!-- we will always use a character set called UTF-8 -->
-          <!-- UTF-8 allows for all languages as well as things like emoji -->
+    <style>
+      body {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #004643;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .banner-image {
+        width: 128px;
+        height: 128px; 
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .name {
+        color: #fffffe;
+      }
+
+      .social-icons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #066726;
+      }
+
+      .link a {
+        color: #001e1d;
+        text-decoration: none;
+      }
+      .items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .article {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4px;
+        border: 2px solid black;
+      }
+
+      .article a {
+        color: white;
+      }
+
+      .article-img {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
-    <div class="banner">
-      <img src="Holcomb, Holly.jpg" alt="Holly Holcomb headshot">
+    <div class="items">
+      <div class="banner">
+        <img src="Holcomb, Holly.jpg" alt="Holly Holcomb headshot" class="banner-image">
+      </div>
+
+      <div class="name">
+        Holly Holcomb
+      </div>
+
+      <div class="social-icons">
+        <a href="https://github.com/hh2242" target="_blank" class="link">
+          GitHub
+        </a>
+
+        <a href="https://www.linkedin.com/in/hollyholcomb/" target="_blank" class="link">
+          LinkedIn
+        </a>
+
+        <a href="https://www.instagram.com/hollystuff/" target="_blank" class="link">
+          Instagram
+        </a>
+      </div>
+
+      <div class="article">
+        <img src="/thumbnails/Holly-Friends-scaled.webp" class="article-img">
+
+        <a target="_blank"
+          href="https://theboothexp.com/2023/11/the-future-of-business-with-ai/">
+          The Future of Business with AI 
+        </a>
+      </div>
+
     </div>
-
-    <div class="name">
-      Holly Holcomb
-    </div>
-
-    <div class="social-icons">
-      <a href="https://github.com/hh2242" target="_blank">
-        GitHub
-      </a>
-
-      <a href="https://www.linkedin.com/in/hollyholcomb/" target="_blank">
-        LinkedIn
-      </a>
-
-      <a href="https://www.instagram.com/hollystuff/" target="_blank">
-        Instagram
-      </a>
-
-    <!-- Etc, for as many links as you want -->
   </body>
 </html>
